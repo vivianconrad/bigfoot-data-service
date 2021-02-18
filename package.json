@@ -1,0 +1,16 @@
+{
+  "name": "bigfoot-data-service",
+  "version": "1.0.0",
+  "description": "Helps us find the Bigfoots.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "load": "node load.js"
+  },
+  "author": "Guy Royse <guy@guyroyse.com>",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "csv-parser": "^3.0.0",
+    "ioredis": "^4.22.0"
+  }
+}
