@@ -19,9 +19,9 @@ fs.createReadStream('data/bfro_reports_geocoded.csv')
     let key = `sighting:${id}`
     let values = { id, title, date, observed, classification, county, state, location, location_details }
 
-    r.hset(key, values)
+    p.hset(key, values)
   })
   .on('end', () => {
     p.exec()
-    r.disconnect()
+    r.quit()
   })
