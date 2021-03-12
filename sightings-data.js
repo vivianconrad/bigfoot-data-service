@@ -44,7 +44,7 @@ class SightingsData {
   }
 
   async findByStateContaining(state, text) {
-    return await this.find(`text @state:{${state}}`)
+    return await this.find(`${text} @state:{${state}}`)
   }
 
   async findNear(latitude, longitude, radius, units) {
